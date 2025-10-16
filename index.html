@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17652583343"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17652583343');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socorro Mecânico Diesel 24h</title>
     <link rel="stylesheet" href="assets/estilo/style.css">
 </head>
 <body>
+
     <!-- Header -->
     <header>
         <div class="logo-container">
-            <img src="assets/imagens/Cópia_de_segurança_de_JW Auto Center.webp" alt="Logo Socorro Mecânico" class="logo">
+            <img src="assets/imagens/logo.webp" alt="Logo Socorro Mecânico" class="logo">
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
-            <h1>Socorro Mecânico<br>JW Auto Center</h1>
+            <h1>Socorro Mecânico<br>Diesel 24h</h1>
             <p class="subtitle">
-                Somos especializados em mecânica e eletrica, socorro de veiculos em todas as rodovias e bairros de São Paulo.
+                Somos especializados em mecânica diesel e fazemos socorro de caminhões em todas as rodovias e bairros de São Paulo.
             </p>
         </div>
     </section>
 
     <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me/5511972731398?text=Oi,+meu+carro+parou+e+preciso+de+ajuda+urgente.+Vocês+conseguem+enviar+alguém%3F" 
+    <a href="https://wa.me/5511972731398?text=Olá!%20Preciso%20de%20socorro%20mecânico%20diesel" 
        class="whatsapp-float" 
        target="_blank"
-       aria-label="Contato WhatsApp">
-        <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
+       aria-label="Contato WhatsApp"
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YYYYYYYYYY'});">
+        <img src="assets/imagens/Cópia_de_segurança_de_JW Auto Center.webp" alt="WhatsApp" class="whatsapp-icon">
     </a>
 
     <!-- Footer CTA Fixo -->
     <div class="footer-cta">
-        <a href="https://wa.me/5511972731398?text=Oi,+meu+carro+parou+e+preciso+de+ajuda+urgente.+Vocês+conseguem+enviar+alguém%3F" 
+        <a href="https://wa.me/5511972731398?text=Olá!%20Preciso%20de%20socorro%20mecânico%20diesel" 
            class="cta-button"
-           target="_blank">
-           <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
+           target="_blank"
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YYYYYYYYYY'});">
+            <img src="assets/imagens/Cópia_de_segurança_de_JW Auto Center.webp" alt="WhatsApp" class="whatsapp-icon">
             <span>PEDIR SOCORRO 24H</span>
         </a>
     </div>
