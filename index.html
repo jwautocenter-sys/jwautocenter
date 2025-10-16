@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17652583343"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -9,8 +8,6 @@
         gtag('js', new Date());
         gtag('config', 'AW-17652583343');
     </script>
-    <!-- Event snippet for Contato conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
     <script>
     function gtag_report_conversion(url) {
       var callback = function () {
@@ -58,7 +55,7 @@
        class="whatsapp-float" 
        target="_blank"
        aria-label="Contato WhatsApp"
-       onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'});">
+        onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'}); return true;
         <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
     </a>
 
@@ -67,7 +64,7 @@
         <a href="https://wa.me/5511972731398?text=Olá!%20Preciso%20de%20socorro%20mecânico%20diesel" 
            class="cta-button"
            target="_blank"
-           onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'});">
+            onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'}); return true;
             <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
             <span>PEDIR SOCORRO 24H</span>
         </a>
