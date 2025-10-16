@@ -9,7 +9,25 @@
         gtag('js', new Date());
         gtag('config', 'AW-17652583343');
     </script>
+    <!-- Event snippet for Contato conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
 
+
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Socorro Mecânico - 24h</title>
@@ -40,7 +58,7 @@
        class="whatsapp-float" 
        target="_blank"
        aria-label="Contato WhatsApp"
-       onclick="gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YYYYYYYYYY'});">
+       onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'});">
         <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
     </a>
 
@@ -49,7 +67,7 @@
         <a href="https://wa.me/5511972731398?text=Olá!%20Preciso%20de%20socorro%20mecânico%20diesel" 
            class="cta-button"
            target="_blank"
-           onclick="gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/YYYYYYYYYY'});">
+           onclick="gtag('event', 'conversion', {'send_to': 'AW-17652583343/uNvVCIyapq4bEK-XtOFB'});">
             <img src="assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
             <span>PEDIR SOCORRO 24H</span>
         </a>
