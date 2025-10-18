@@ -3,12 +3,23 @@
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17652583343"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'AW-17652583343');
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'AW-17652583343');
+      function rastrearCliqueWhatsApp(event, urlDestino) {
+        event.preventDefault();
+        gtag('event', 'conversion', {
+          'send_to': 'AW-17652583343/j5V7CK6Ml68bEK-XtOFB',
+          'event_callback': function() {
+            window.location = urlDestino;
+          }
+        });
+        setTimeout(function() {
+          window.location = urlDestino;
+        }, 800);
+      }
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +50,7 @@
     <a href="https://wa.me/5511972731398?text=Oi,+meu+carro+parou+e+preciso+de+ajuda+urgente.+Vocês+conseguem+enviar+alguém%3F " 
        class="whatsapp-float" 
        target="_blank" id="whatsapp-button"
-       aria-label="Contato WhatsApp">
+       aria-label="Contato WhatsApp" onclick="rastrearCliqueWhatsApp(event, this.href)"> 
         <img src="/assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
     </a>
 
@@ -47,8 +58,9 @@
     <div class="footer-cta">
         <a href="https://wa.me/5511972731398?text=Oi,+meu+carro+parou+e+preciso+de+ajuda+urgente.+Vocês+conseguem+enviar+alguém%3F " 
            class="cta-button" 
-           target="_blank" id="whatsapp-button"> 
+           target="_blank" id="whatsapp-button"  onclick="rastrearCliqueWhatsApp(event, this.href)"> 
             <img src="/assets/imagens/whatsapp.webp" alt="WhatsApp" class="whatsapp-icon">
+            
             <span>PEDIR SOCORRO 24H</span>
         </a>
     </div>
